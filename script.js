@@ -1,4 +1,4 @@
-// Smooth scroll
+// Smooth scrolling
 document.querySelectorAll("nav a").forEach(anchor => {
     anchor.addEventListener("click", function(e) {
         e.preventDefault();
@@ -8,12 +8,9 @@ document.querySelectorAll("nav a").forEach(anchor => {
 });
 
 // FAQ toggle
-const buttons = document.querySelectorAll(".faq-btn");
-
-buttons.forEach(btn => {
+document.querySelectorAll(".faq-btn").forEach(btn => {
     btn.addEventListener("click", () => {
         const content = btn.nextElementSibling;
-
         content.style.display =
             content.style.display === "block" ? "none" : "block";
     });
