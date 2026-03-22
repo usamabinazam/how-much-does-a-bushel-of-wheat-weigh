@@ -1,25 +1,24 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     margin: 0;
-    background: #f4f7f6;
+    background: #f5f7f6;
     color: #333;
 }
 
 header {
-    background: #2e7d32;
+    background: linear-gradient(45deg, #2e7d32, #4caf50);
     color: white;
     padding: 20px;
     text-align: center;
 }
 
 nav ul {
-    list-style: none;
     padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 10px;
+    display: inline-block;
+    margin: 8px;
 }
 
 nav a {
@@ -29,23 +28,24 @@ nav a {
 }
 
 section {
-    padding: 40px;
     max-width: 900px;
     margin: auto;
+    padding: 40px 20px;
 }
 
 .card {
     background: white;
     padding: 20px;
-    margin: 10px 0;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 15px 0;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
 }
 
 table {
     width: 100%;
-    border-collapse: collapse;
     background: white;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
 th, td {
@@ -61,18 +61,20 @@ th {
 .grid {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .box {
+    flex: 1;
+    min-width: 250px;
     background: white;
     padding: 20px;
-    flex: 1;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 
 .faq button {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin-top: 10px;
     background: #4caf50;
     color: white;
